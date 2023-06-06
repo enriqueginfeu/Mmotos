@@ -1,0 +1,101 @@
+.motos {
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.motosFull {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.contenido {
+    margin-bottom: 5rem;
+    padding: 1rem;
+    
+}
+.contenido h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+.descripcion {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+.descripcionFull {
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 1.8rem;
+    white-space: pre-wrap;
+}
+
+.precio {
+    color: var(--primary);
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+.enlace {
+    margin-top: 2rem;
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+.enlace:hover {
+    background-color: var(--primary);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.formulario label {
+    font-size: 2.5rem;
+}
+
+.formulario select {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.formulario input[type="submit"] {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+    color: var(--white);
+}
